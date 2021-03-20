@@ -6,7 +6,8 @@ from .models import Event
 
 
 def event_view_page(request):
-    obj = Event.objects.get(id=1)
+    obj = Event.objects.get(id=3)
+
     context = {
         "object": obj
     }
