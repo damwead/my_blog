@@ -20,6 +20,7 @@
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
+        {% for event in object_list %}
         <!-- Blog Post -->
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
@@ -32,32 +33,9 @@
             Event date: {{ object.date }}
           </div>
         </div>
+        {% endfor %}
 
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">{{ object.title }}</h2>
-            <p class="card-text">{{ object.description }}</p>>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Event date: {{ object.date }}
-          </div>
-        </div>
 
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">{{ object.title }}</h2>
-            <p class="card-text">{{ object.description }}</p>>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Event date: {{ object.date }}
-          </div>
-        </div>
 
         <!-- Pagination -->
         <ul class="pagination justify-content-center mb-4">
