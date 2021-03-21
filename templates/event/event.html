@@ -25,12 +25,12 @@
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
-            <h2 class="card-title">{{ object.title }}</h2>
-            <p class="card-text">{{ object.description }}</p>
+            <h2 class="card-title">{{ event.title }}</h2>
+            <p class="card-text">{{ event.description }}</p>
             <a href="#" class="btn btn-primary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
-            Event date: {{ object.date }}
+            Event date: {{ event.date_added }}
           </div>
         </div>
         {% endfor %}
